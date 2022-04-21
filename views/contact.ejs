@@ -1,0 +1,17 @@
+<%- include('partial/heading.ejs'); -%>
+
+<div class="container margin-top">
+    <h1 class="margin-bottom">Contacts</h1>
+    <hr>
+    <form action="/contact" method="post">
+        <h5>Email:</h5>
+        <input type="email" name="email">
+        <h5>Context:</h5>
+        <textarea name="context" cols="50" rows="10"></textarea>
+        <button class="btn btn-lg btn-dark submit"type="submit">Send</button>
+    </form>
+</div>
+
+
+
+<%- include('partial/footer.ejs'); -%>

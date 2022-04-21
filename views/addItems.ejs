@@ -1,0 +1,16 @@
+<%- include('partial/heading.ejs'); -%>
+
+<div class="container margin-top">
+    <h1>Add New Items</h1>
+    <hr>
+    <form action="/" method="post">
+        <h5>Title</h5>
+        <input type="text" name="title">
+        <h5>Description</h5>
+        <textarea name="descript"cols="50" rows="10"></textarea>
+        <button class="btn btn-lg btn-dark submit" type="submit">Add</button>
+    </form>
+</div>
+
+
+<%- include('partial/footer.ejs'); -%>

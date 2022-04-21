@@ -1,0 +1,39 @@
+<%- include('partial/heading.ejs'); -%>
+    
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark jumbotron">
+       <div class="container">
+            <a class="navbar-brand scale" href="#">JessArreza</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    
+                    <button  class="link-button nav-link scale">Blog</button>
+                    <form action="/about" method="get" class="inline">
+                        <button type="submit"  class="link-button nav-link scale">About</button>
+                    </form>
+                    <form action="/contact" method="get" class="inline">
+                        <button type="submit" class="link-button nav-link scale">Contact</button>
+                    </form>
+                </div>
+            </div>
+       </div>
+    </nav>
+
+    <div class="container margin-top">
+        
+            <!-- <% for(let i=0; i < titles.lengths; i++){ %> -->
+                    <h1><%=titles%></h1>
+            <!-- <% } %> -->
+
+            <!-- <% for(let i=0; i < descripts.lengths; i++){ %> -->
+                    <p><%=descripts%></p>
+            <!-- <% } %> -->
+        
+    </div>
+
+  
+
+<%- include('partial/footer.ejs'); -%>
